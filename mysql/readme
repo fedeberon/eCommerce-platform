@@ -1,0 +1,8 @@
+1- ubicarse en la carpeta mysql
+2- docker build -t alertacomunitaria_db .
+3- docker run -d -p 3306:3306 alertacomunitaria_db:latest
+4- verificar por bash si tienen la base de datos alertacomunitaria_db
+5- para entrar al bash docker exec -it <id del container de la base de datos> bash
+6- mysql -usa -psa
+7- show databases;
+8- Si tienen creada la base de datos ya pueden iniciar el sistema.

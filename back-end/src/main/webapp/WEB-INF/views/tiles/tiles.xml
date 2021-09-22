@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    <definition name="template-def" template="/WEB-INF/views/tiles/layouts/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/tiles/templates/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/templates/footer.jsp" />
+    </definition>
+
+    <definition name="home" extends="template-def">
+        <put-attribute name="title" value="Welcome" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />
+    </definition>
+
+    <definition name="tables" extends="template-def">
+        <put-attribute name="title" value="tables" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/tables.jsp" />
+    </definition>
+
+    <definition name="widget" extends="template-def">
+        <put-attribute name="title" value="widget" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/widget.jsp" />
+    </definition>
+
+    <!--Usuario -->
+
+    <definition name="usuario/create" extends="template-def">
+        <put-attribute name="title" value="Crear usuario" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/usuario/create.jsp" />
+    </definition>
+
+    <definition name="usuario/list" extends="template-def">
+        <put-attribute name="title" value="Lista de usuarios" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/usuario/list.jsp" />
+    </definition>
+
+    <definition name="advanced-form" extends="template-def">
+        <put-attribute name="title" value="advanced-form" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/advanced-form.jsp" />
+    </definition>
+
+    <definition name="editor-form" extends="template-def">
+        <put-attribute name="title" value="editor-form" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/editor-form.jsp" />
+    </definition>
+
+    <definition name="order/show" extends="template-def">
+        <put-attribute name="title" value="Orden" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/order/show.jsp" />
+    </definition>
+
+    <!--Login -->
+    <definition name="login" template="/WEB-INF/views/pages/login.jsp">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="header" value="" />
+        <put-attribute name="body" value="" />
+    </definition>
+
+</tiles-definitions>
+

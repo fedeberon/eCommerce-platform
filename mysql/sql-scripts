@@ -1,0 +1,9 @@
+
+
+docker run -d -p 3306:3306 -v /Users/fedeberon/Desarrollo/data-mysql:/var/lib/mysql 45992f027f9d
+
+-- username: fede
+-- password: fede
+-- mail: fede@gmail.com
+INSERT INTO USERS (USU_ID, users_mail, USU_PASSWORD, USU_USERNAME)
+    VALUES (1, 'fede@gmail.com', '$2a$10$BruORvlxSYVoUUsVe7aFeeVWAtrjAADPCS4UGZKZ4EYO1yB5d/tDC', 'fede');
